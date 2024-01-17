@@ -29,10 +29,13 @@ jobs:
     - name: Check go version  
       run: go version  
 
-    # Install godoc and generate documentation
-    - name: Generate Documentation
+    # Install godoc 
+    - name: Install godoc
       run: |
         go get golang.org/x/tools/cmd/godoc
+
+    - name: Generate Documentation
+      run: |
         mkdir $BRANCH_NAME
         godoc -http=:6060 &
         sleep 5  # wait for godoc server to start
