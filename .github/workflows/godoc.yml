@@ -33,6 +33,7 @@ jobs:
     - name: Install godoc
       run: |
         go get golang.org/x/tools/cmd/godoc
+        which godoc
 
     - name: Generate Documentation
       run: |
