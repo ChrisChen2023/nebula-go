@@ -44,7 +44,7 @@ jobs:
         wget -P $BRANCH_NAME http://localhost:6060/lib/godoc/godocs.js
         packages="github.com/stretchr/testify github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module"  # Replace with your packages
         for package in $packages; do
-          wget -P $BRANCH_NAME -p -k http://localhost:6060/pkg/$package || true
+          wget -q --show-progress -P $BRANCH_NAME -p -k http://localhost:6060/pkg/$package 
         done
         pkill godoc  # Stop the godoc server
 
