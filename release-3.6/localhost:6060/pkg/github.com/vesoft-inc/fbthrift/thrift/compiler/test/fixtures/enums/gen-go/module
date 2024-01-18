@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>module - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.20.12";</script>
+<script src="../../../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="module#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package module
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="module#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="module#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="module#pkg-variables">Variables</a></dd>
+			
+			
+			
+				
+				<dd><a href="module#Metasyntactic">type Metasyntactic</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MetasyntacticFromString">func MetasyntacticFromString(s string) (Metasyntactic, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MetasyntacticPtr">func MetasyntacticPtr(v Metasyntactic) *Metasyntactic</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#Metasyntactic.String">func (p Metasyntactic) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyBitmaskEnum1">type MyBitmaskEnum1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum1FromString">func MyBitmaskEnum1FromString(s string) (MyBitmaskEnum1, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum1Ptr">func MyBitmaskEnum1Ptr(v MyBitmaskEnum1) *MyBitmaskEnum1</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum1.String">func (p MyBitmaskEnum1) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyBitmaskEnum2">type MyBitmaskEnum2</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum2FromString">func MyBitmaskEnum2FromString(s string) (MyBitmaskEnum2, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum2Ptr">func MyBitmaskEnum2Ptr(v MyBitmaskEnum2) *MyBitmaskEnum2</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyBitmaskEnum2.String">func (p MyBitmaskEnum2) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyEnum1">type MyEnum1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum1FromString">func MyEnum1FromString(s string) (MyEnum1, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum1Ptr">func MyEnum1Ptr(v MyEnum1) *MyEnum1</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum1.String">func (p MyEnum1) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyEnum2">type MyEnum2</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum2FromString">func MyEnum2FromString(s string) (MyEnum2, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum2Ptr">func MyEnum2Ptr(v MyEnum2) *MyEnum2</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum2.String">func (p MyEnum2) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyEnum3">type MyEnum3</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum3FromString">func MyEnum3FromString(s string) (MyEnum3, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum3Ptr">func MyEnum3Ptr(v MyEnum3) *MyEnum3</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum3.String">func (p MyEnum3) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyEnum4">type MyEnum4</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum4FromString">func MyEnum4FromString(s string) (MyEnum4, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum4Ptr">func MyEnum4Ptr(v MyEnum4) *MyEnum4</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyEnum4.String">func (p MyEnum4) String() string</a></dd>
+				
+			
+				
+				<dd><a href="module#MyStruct">type MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#NewMyStruct">func NewMyStruct() *MyStruct</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.GetMe1T1">func (p *MyStruct) GetMe1T1() MyEnum1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.GetMe1T2">func (p *MyStruct) GetMe1T2() MyEnum1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.GetMe2_3">func (p *MyStruct) GetMe2_3() MyEnum2</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.GetMe3N3">func (p *MyStruct) GetMe3N3() MyEnum3</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.Read">func (p *MyStruct) Read(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.ReadField1">func (p *MyStruct) ReadField1(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.ReadField2">func (p *MyStruct) ReadField2(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.ReadField4">func (p *MyStruct) ReadField4(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.ReadField6">func (p *MyStruct) ReadField6(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.SetMe1T1">func (m *MyStruct) SetMe1T1(me1T1 MyEnum1) *MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.SetMe1T2">func (m *MyStruct) SetMe1T2(me1T2 MyEnum1) *MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.SetMe2_3">func (m *MyStruct) SetMe2_3(me2_3 MyEnum2) *MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.SetMe3N3">func (m *MyStruct) SetMe3N3(me3N3 MyEnum3) *MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.String">func (p *MyStruct) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStruct.Write">func (p *MyStruct) Write(oprot thrift.Protocol) error</a></dd>
+				
+			
+				
+				<dd><a href="module#MyStructBuilder">type MyStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#NewMyStructBuilder">func NewMyStructBuilder() *MyStructBuilder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStructBuilder.Emit">func (p MyStructBuilder) Emit() *MyStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStructBuilder.Me1T1">func (m *MyStructBuilder) Me1T1(me1T1 MyEnum1) *MyStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStructBuilder.Me1T2">func (m *MyStructBuilder) Me1T2(me1T2 MyEnum1) *MyStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStructBuilder.Me2_3">func (m *MyStructBuilder) Me2_3(me2_3 MyEnum2) *MyStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#MyStructBuilder.Me3N3">func (m *MyStructBuilder) Me3N3(me3N3 MyEnum3) *MyStructBuilder</a></dd>
+				
+			
+				
+				<dd><a href="module#SomeStruct">type SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#NewSomeStruct">func NewSomeStruct() *SomeStruct</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.GetFine">func (p *SomeStruct) GetFine() Metasyntactic</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.GetQuestionable">func (p *SomeStruct) GetQuestionable() Metasyntactic</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.GetReasonable">func (p *SomeStruct) GetReasonable() Metasyntactic</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.GetTags">func (p *SomeStruct) GetTags() []int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.Read">func (p *SomeStruct) Read(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.ReadField1">func (p *SomeStruct) ReadField1(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.ReadField2">func (p *SomeStruct) ReadField2(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.ReadField3">func (p *SomeStruct) ReadField3(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.ReadField4">func (p *SomeStruct) ReadField4(iprot thrift.Protocol) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.SetFine">func (s *SomeStruct) SetFine(fine Metasyntactic) *SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.SetQuestionable">func (s *SomeStruct) SetQuestionable(questionable Metasyntactic) *SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.SetReasonable">func (s *SomeStruct) SetReasonable(reasonable Metasyntactic) *SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.SetTags">func (s *SomeStruct) SetTags(tags []int32) *SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.String">func (p *SomeStruct) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStruct.Write">func (p *SomeStruct) Write(oprot thrift.Protocol) error</a></dd>
+				
+			
+				
+				<dd><a href="module#SomeStructBuilder">type SomeStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#NewSomeStructBuilder">func NewSomeStructBuilder() *SomeStructBuilder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStructBuilder.Emit">func (p SomeStructBuilder) Emit() *SomeStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStructBuilder.Fine">func (s *SomeStructBuilder) Fine(fine Metasyntactic) *SomeStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStructBuilder.Questionable">func (s *SomeStructBuilder) Questionable(questionable Metasyntactic) *SomeStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStructBuilder.Reasonable">func (s *SomeStructBuilder) Reasonable(reasonable Metasyntactic) *SomeStructBuilder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="module#SomeStructBuilder.Tags">func (s *SomeStructBuilder) Tags(tags []int32) *SomeStructBuilder</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/constants.go">constants.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go">ttypes.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var <span id="GoUnusedProtection__">GoUnusedProtection__</span> <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+			
+				
+				<pre>var <span id="MetasyntacticNames">MetasyntacticNames</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;FOO&#34;,
+    &#34;BAR&#34;,
+    &#34;BAZ&#34;,
+    &#34;BAX&#34;,
+    &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MetasyntacticToName">MetasyntacticToName</span> = map[<a href="module#Metasyntactic">Metasyntactic</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#Metasyntactic_FOO">Metasyntactic_FOO</a>:         &#34;FOO&#34;,
+    <a href="module#Metasyntactic_BAR">Metasyntactic_BAR</a>:         &#34;BAR&#34;,
+    <a href="module#Metasyntactic_BAZ">Metasyntactic_BAZ</a>:         &#34;BAZ&#34;,
+    <a href="module#Metasyntactic_BAX">Metasyntactic_BAX</a>:         &#34;BAX&#34;,
+    <a href="module#Metasyntactic_Unspecified">Metasyntactic_Unspecified</a>: &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MetasyntacticToValue">MetasyntacticToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#Metasyntactic">Metasyntactic</a>{
+    &#34;FOO&#34;:         <a href="module#Metasyntactic_FOO">Metasyntactic_FOO</a>,
+    &#34;BAR&#34;:         <a href="module#Metasyntactic_BAR">Metasyntactic_BAR</a>,
+    &#34;BAZ&#34;:         <a href="module#Metasyntactic_BAZ">Metasyntactic_BAZ</a>,
+    &#34;BAX&#34;:         <a href="module#Metasyntactic_BAX">Metasyntactic_BAX</a>,
+    &#34;Unspecified&#34;: <a href="module#Metasyntactic_Unspecified">Metasyntactic_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MetasyntacticValues">MetasyntacticValues</span> = []<a href="module#Metasyntactic">Metasyntactic</a>{
+    <a href="module#Metasyntactic_FOO">Metasyntactic_FOO</a>,
+    <a href="module#Metasyntactic_BAR">Metasyntactic_BAR</a>,
+    <a href="module#Metasyntactic_BAZ">Metasyntactic_BAZ</a>,
+    <a href="module#Metasyntactic_BAX">Metasyntactic_BAX</a>,
+    <a href="module#Metasyntactic_Unspecified">Metasyntactic_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum1Names">MyBitmaskEnum1Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ONE&#34;,
+    &#34;TWO&#34;,
+    &#34;FOUR&#34;,
+    &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum1ToName">MyBitmaskEnum1ToName</span> = map[<a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyBitmaskEnum1_ONE">MyBitmaskEnum1_ONE</a>:         &#34;ONE&#34;,
+    <a href="module#MyBitmaskEnum1_TWO">MyBitmaskEnum1_TWO</a>:         &#34;TWO&#34;,
+    <a href="module#MyBitmaskEnum1_FOUR">MyBitmaskEnum1_FOUR</a>:        &#34;FOUR&#34;,
+    <a href="module#MyBitmaskEnum1_Unspecified">MyBitmaskEnum1_Unspecified</a>: &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum1ToValue">MyBitmaskEnum1ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>{
+    &#34;ONE&#34;:         <a href="module#MyBitmaskEnum1_ONE">MyBitmaskEnum1_ONE</a>,
+    &#34;TWO&#34;:         <a href="module#MyBitmaskEnum1_TWO">MyBitmaskEnum1_TWO</a>,
+    &#34;FOUR&#34;:        <a href="module#MyBitmaskEnum1_FOUR">MyBitmaskEnum1_FOUR</a>,
+    &#34;Unspecified&#34;: <a href="module#MyBitmaskEnum1_Unspecified">MyBitmaskEnum1_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum1Values">MyBitmaskEnum1Values</span> = []<a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>{
+    <a href="module#MyBitmaskEnum1_ONE">MyBitmaskEnum1_ONE</a>,
+    <a href="module#MyBitmaskEnum1_TWO">MyBitmaskEnum1_TWO</a>,
+    <a href="module#MyBitmaskEnum1_FOUR">MyBitmaskEnum1_FOUR</a>,
+    <a href="module#MyBitmaskEnum1_Unspecified">MyBitmaskEnum1_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum2Names">MyBitmaskEnum2Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ONE&#34;,
+    &#34;TWO&#34;,
+    &#34;FOUR&#34;,
+    &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum2ToName">MyBitmaskEnum2ToName</span> = map[<a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyBitmaskEnum2_ONE">MyBitmaskEnum2_ONE</a>:         &#34;ONE&#34;,
+    <a href="module#MyBitmaskEnum2_TWO">MyBitmaskEnum2_TWO</a>:         &#34;TWO&#34;,
+    <a href="module#MyBitmaskEnum2_FOUR">MyBitmaskEnum2_FOUR</a>:        &#34;FOUR&#34;,
+    <a href="module#MyBitmaskEnum2_Unspecified">MyBitmaskEnum2_Unspecified</a>: &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum2ToValue">MyBitmaskEnum2ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>{
+    &#34;ONE&#34;:         <a href="module#MyBitmaskEnum2_ONE">MyBitmaskEnum2_ONE</a>,
+    &#34;TWO&#34;:         <a href="module#MyBitmaskEnum2_TWO">MyBitmaskEnum2_TWO</a>,
+    &#34;FOUR&#34;:        <a href="module#MyBitmaskEnum2_FOUR">MyBitmaskEnum2_FOUR</a>,
+    &#34;Unspecified&#34;: <a href="module#MyBitmaskEnum2_Unspecified">MyBitmaskEnum2_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyBitmaskEnum2Values">MyBitmaskEnum2Values</span> = []<a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>{
+    <a href="module#MyBitmaskEnum2_ONE">MyBitmaskEnum2_ONE</a>,
+    <a href="module#MyBitmaskEnum2_TWO">MyBitmaskEnum2_TWO</a>,
+    <a href="module#MyBitmaskEnum2_FOUR">MyBitmaskEnum2_FOUR</a>,
+    <a href="module#MyBitmaskEnum2_Unspecified">MyBitmaskEnum2_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum1Names">MyEnum1Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ME1_1&#34;,
+    &#34;ME1_2&#34;,
+    &#34;ME1_3&#34;,
+    &#34;ME1_5&#34;,
+    &#34;ME1_6&#34;,
+    &#34;ME1_0&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum1ToName">MyEnum1ToName</span> = map[<a href="module#MyEnum1">MyEnum1</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyEnum1_ME1_1">MyEnum1_ME1_1</a>: &#34;ME1_1&#34;,
+    <a href="module#MyEnum1_ME1_2">MyEnum1_ME1_2</a>: &#34;ME1_2&#34;,
+    <a href="module#MyEnum1_ME1_3">MyEnum1_ME1_3</a>: &#34;ME1_3&#34;,
+    <a href="module#MyEnum1_ME1_5">MyEnum1_ME1_5</a>: &#34;ME1_5&#34;,
+    <a href="module#MyEnum1_ME1_6">MyEnum1_ME1_6</a>: &#34;ME1_6&#34;,
+    <a href="module#MyEnum1_ME1_0">MyEnum1_ME1_0</a>: &#34;ME1_0&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum1ToValue">MyEnum1ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyEnum1">MyEnum1</a>{
+    &#34;ME1_1&#34;: <a href="module#MyEnum1_ME1_1">MyEnum1_ME1_1</a>,
+    &#34;ME1_2&#34;: <a href="module#MyEnum1_ME1_2">MyEnum1_ME1_2</a>,
+    &#34;ME1_3&#34;: <a href="module#MyEnum1_ME1_3">MyEnum1_ME1_3</a>,
+    &#34;ME1_5&#34;: <a href="module#MyEnum1_ME1_5">MyEnum1_ME1_5</a>,
+    &#34;ME1_6&#34;: <a href="module#MyEnum1_ME1_6">MyEnum1_ME1_6</a>,
+    &#34;ME1_0&#34;: <a href="module#MyEnum1_ME1_0">MyEnum1_ME1_0</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum1Values">MyEnum1Values</span> = []<a href="module#MyEnum1">MyEnum1</a>{
+    <a href="module#MyEnum1_ME1_1">MyEnum1_ME1_1</a>,
+    <a href="module#MyEnum1_ME1_2">MyEnum1_ME1_2</a>,
+    <a href="module#MyEnum1_ME1_3">MyEnum1_ME1_3</a>,
+    <a href="module#MyEnum1_ME1_5">MyEnum1_ME1_5</a>,
+    <a href="module#MyEnum1_ME1_6">MyEnum1_ME1_6</a>,
+    <a href="module#MyEnum1_ME1_0">MyEnum1_ME1_0</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum2Names">MyEnum2Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ME2_0&#34;,
+    &#34;ME2_1&#34;,
+    &#34;ME2_2&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum2ToName">MyEnum2ToName</span> = map[<a href="module#MyEnum2">MyEnum2</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyEnum2_ME2_0">MyEnum2_ME2_0</a>: &#34;ME2_0&#34;,
+    <a href="module#MyEnum2_ME2_1">MyEnum2_ME2_1</a>: &#34;ME2_1&#34;,
+    <a href="module#MyEnum2_ME2_2">MyEnum2_ME2_2</a>: &#34;ME2_2&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum2ToValue">MyEnum2ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyEnum2">MyEnum2</a>{
+    &#34;ME2_0&#34;: <a href="module#MyEnum2_ME2_0">MyEnum2_ME2_0</a>,
+    &#34;ME2_1&#34;: <a href="module#MyEnum2_ME2_1">MyEnum2_ME2_1</a>,
+    &#34;ME2_2&#34;: <a href="module#MyEnum2_ME2_2">MyEnum2_ME2_2</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum2Values">MyEnum2Values</span> = []<a href="module#MyEnum2">MyEnum2</a>{
+    <a href="module#MyEnum2_ME2_0">MyEnum2_ME2_0</a>,
+    <a href="module#MyEnum2_ME2_1">MyEnum2_ME2_1</a>,
+    <a href="module#MyEnum2_ME2_2">MyEnum2_ME2_2</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum3Names">MyEnum3Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ME3_0&#34;,
+    &#34;ME3_1&#34;,
+    &#34;ME3_N2&#34;,
+    &#34;ME3_N1&#34;,
+    &#34;ME3_9&#34;,
+    &#34;ME3_10&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum3ToName">MyEnum3ToName</span> = map[<a href="module#MyEnum3">MyEnum3</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyEnum3_ME3_0">MyEnum3_ME3_0</a>:  &#34;ME3_0&#34;,
+    <a href="module#MyEnum3_ME3_1">MyEnum3_ME3_1</a>:  &#34;ME3_1&#34;,
+    <a href="module#MyEnum3_ME3_N2">MyEnum3_ME3_N2</a>: &#34;ME3_N2&#34;,
+    <a href="module#MyEnum3_ME3_N1">MyEnum3_ME3_N1</a>: &#34;ME3_N1&#34;,
+    <a href="module#MyEnum3_ME3_9">MyEnum3_ME3_9</a>:  &#34;ME3_9&#34;,
+    <a href="module#MyEnum3_ME3_10">MyEnum3_ME3_10</a>: &#34;ME3_10&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum3ToValue">MyEnum3ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyEnum3">MyEnum3</a>{
+    &#34;ME3_0&#34;:  <a href="module#MyEnum3_ME3_0">MyEnum3_ME3_0</a>,
+    &#34;ME3_1&#34;:  <a href="module#MyEnum3_ME3_1">MyEnum3_ME3_1</a>,
+    &#34;ME3_N2&#34;: <a href="module#MyEnum3_ME3_N2">MyEnum3_ME3_N2</a>,
+    &#34;ME3_N1&#34;: <a href="module#MyEnum3_ME3_N1">MyEnum3_ME3_N1</a>,
+    &#34;ME3_9&#34;:  <a href="module#MyEnum3_ME3_9">MyEnum3_ME3_9</a>,
+    &#34;ME3_10&#34;: <a href="module#MyEnum3_ME3_10">MyEnum3_ME3_10</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum3Values">MyEnum3Values</span> = []<a href="module#MyEnum3">MyEnum3</a>{
+    <a href="module#MyEnum3_ME3_0">MyEnum3_ME3_0</a>,
+    <a href="module#MyEnum3_ME3_1">MyEnum3_ME3_1</a>,
+    <a href="module#MyEnum3_ME3_N2">MyEnum3_ME3_N2</a>,
+    <a href="module#MyEnum3_ME3_N1">MyEnum3_ME3_N1</a>,
+    <a href="module#MyEnum3_ME3_9">MyEnum3_ME3_9</a>,
+    <a href="module#MyEnum3_ME3_10">MyEnum3_ME3_10</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum4Names">MyEnum4Names</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    &#34;ME4_A&#34;,
+    &#34;ME4_B&#34;,
+    &#34;ME4_C&#34;,
+    &#34;ME4_D&#34;,
+    &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum4ToName">MyEnum4ToName</span> = map[<a href="module#MyEnum4">MyEnum4</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="module#MyEnum4_ME4_A">MyEnum4_ME4_A</a>:       &#34;ME4_A&#34;,
+    <a href="module#MyEnum4_ME4_B">MyEnum4_ME4_B</a>:       &#34;ME4_B&#34;,
+    <a href="module#MyEnum4_ME4_C">MyEnum4_ME4_C</a>:       &#34;ME4_C&#34;,
+    <a href="module#MyEnum4_ME4_D">MyEnum4_ME4_D</a>:       &#34;ME4_D&#34;,
+    <a href="module#MyEnum4_Unspecified">MyEnum4_Unspecified</a>: &#34;Unspecified&#34;,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum4ToValue">MyEnum4ToValue</span> = map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="module#MyEnum4">MyEnum4</a>{
+    &#34;ME4_A&#34;:       <a href="module#MyEnum4_ME4_A">MyEnum4_ME4_A</a>,
+    &#34;ME4_B&#34;:       <a href="module#MyEnum4_ME4_B">MyEnum4_ME4_B</a>,
+    &#34;ME4_C&#34;:       <a href="module#MyEnum4_ME4_C">MyEnum4_ME4_C</a>,
+    &#34;ME4_D&#34;:       <a href="module#MyEnum4_ME4_D">MyEnum4_ME4_D</a>,
+    &#34;Unspecified&#34;: <a href="module#MyEnum4_Unspecified">MyEnum4_Unspecified</a>,
+}</pre>
+			
+				
+				<pre>var <span id="MyEnum4Values">MyEnum4Values</span> = []<a href="module#MyEnum4">MyEnum4</a>{
+    <a href="module#MyEnum4_ME4_A">MyEnum4_ME4_A</a>,
+    <a href="module#MyEnum4_ME4_B">MyEnum4_ME4_B</a>,
+    <a href="module#MyEnum4_ME4_C">MyEnum4_ME4_C</a>,
+    <a href="module#MyEnum4_ME4_D">MyEnum4_ME4_D</a>,
+    <a href="module#MyEnum4_Unspecified">MyEnum4_Unspecified</a>,
+}</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="Metasyntactic">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=538:562#L17">Metasyntactic</a>
+				<a class="permalink" href="module#Metasyntactic">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Metasyntactic <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="Metasyntactic_FOO">Metasyntactic_FOO</span>         <a href="module#Metasyntactic">Metasyntactic</a> = 1
+    <span id="Metasyntactic_BAR">Metasyntactic_BAR</span>         <a href="module#Metasyntactic">Metasyntactic</a> = 2
+    <span id="Metasyntactic_BAZ">Metasyntactic_BAZ</span>         <a href="module#Metasyntactic">Metasyntactic</a> = 3
+    <span id="Metasyntactic_BAX">Metasyntactic_BAX</span>         <a href="module#Metasyntactic">Metasyntactic</a> = 4
+    <span id="Metasyntactic_Unspecified">Metasyntactic_Unspecified</span> <a href="module#Metasyntactic">Metasyntactic</a> = 0
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MetasyntacticFromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=1572:1633#L65">MetasyntacticFromString</a>
+					<a class="permalink" href="module#MetasyntacticFromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MetasyntacticFromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#Metasyntactic">Metasyntactic</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MetasyntacticPtr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=1779:1832#L72">MetasyntacticPtr</a>
+					<a class="permalink" href="module#MetasyntacticPtr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MetasyntacticPtr(v <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#Metasyntactic">Metasyntactic</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="Metasyntactic.String">func (Metasyntactic) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=1449:1487#L58">String</a>
+					<a class="permalink" href="module#Metasyntactic.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#Metasyntactic">Metasyntactic</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyBitmaskEnum1">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=6215:6240#L302">MyBitmaskEnum1</a>
+				<a class="permalink" href="module#MyBitmaskEnum1">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyBitmaskEnum1 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyBitmaskEnum1_ONE">MyBitmaskEnum1_ONE</span>         <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a> = 1
+    <span id="MyBitmaskEnum1_TWO">MyBitmaskEnum1_TWO</span>         <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a> = 2
+    <span id="MyBitmaskEnum1_FOUR">MyBitmaskEnum1_FOUR</span>        <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a> = 4
+    <span id="MyBitmaskEnum1_Unspecified">MyBitmaskEnum1_Unspecified</span> <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a> = 0
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyBitmaskEnum1FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=7162:7225#L345">MyBitmaskEnum1FromString</a>
+					<a class="permalink" href="module#MyBitmaskEnum1FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyBitmaskEnum1FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyBitmaskEnum1Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=7374:7430#L352">MyBitmaskEnum1Ptr</a>
+					<a class="permalink" href="module#MyBitmaskEnum1Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyBitmaskEnum1Ptr(v <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>) *<a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyBitmaskEnum1.String">func (MyBitmaskEnum1) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=7037:7076#L338">String</a>
+					<a class="permalink" href="module#MyBitmaskEnum1.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyBitmaskEnum1">MyBitmaskEnum1</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyBitmaskEnum2">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=7446:7471#L354">MyBitmaskEnum2</a>
+				<a class="permalink" href="module#MyBitmaskEnum2">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyBitmaskEnum2 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyBitmaskEnum2_ONE">MyBitmaskEnum2_ONE</span>         <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a> = 1
+    <span id="MyBitmaskEnum2_TWO">MyBitmaskEnum2_TWO</span>         <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a> = 2
+    <span id="MyBitmaskEnum2_FOUR">MyBitmaskEnum2_FOUR</span>        <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a> = 4
+    <span id="MyBitmaskEnum2_Unspecified">MyBitmaskEnum2_Unspecified</span> <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a> = 0
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyBitmaskEnum2FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=8393:8456#L397">MyBitmaskEnum2FromString</a>
+					<a class="permalink" href="module#MyBitmaskEnum2FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyBitmaskEnum2FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyBitmaskEnum2Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=8605:8661#L404">MyBitmaskEnum2Ptr</a>
+					<a class="permalink" href="module#MyBitmaskEnum2Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyBitmaskEnum2Ptr(v <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>) *<a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyBitmaskEnum2.String">func (MyBitmaskEnum2) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=8268:8307#L390">String</a>
+					<a class="permalink" href="module#MyBitmaskEnum2.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyBitmaskEnum2">MyBitmaskEnum2</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyEnum1">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=1848:1866#L74">MyEnum1</a>
+				<a class="permalink" href="module#MyEnum1">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyEnum1 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyEnum1_ME1_1">MyEnum1_ME1_1</span> <a href="module#MyEnum1">MyEnum1</a> = 1
+    <span id="MyEnum1_ME1_2">MyEnum1_ME1_2</span> <a href="module#MyEnum1">MyEnum1</a> = 2
+    <span id="MyEnum1_ME1_3">MyEnum1_ME1_3</span> <a href="module#MyEnum1">MyEnum1</a> = 3
+    <span id="MyEnum1_ME1_5">MyEnum1_ME1_5</span> <a href="module#MyEnum1">MyEnum1</a> = 5
+    <span id="MyEnum1_ME1_6">MyEnum1_ME1_6</span> <a href="module#MyEnum1">MyEnum1</a> = 6
+    <span id="MyEnum1_ME1_0">MyEnum1_ME1_0</span> <a href="module#MyEnum1">MyEnum1</a> = 0
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyEnum1FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=2794:2843#L127">MyEnum1FromString</a>
+					<a class="permalink" href="module#MyEnum1FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum1FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyEnum1">MyEnum1</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyEnum1Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=2971:3006#L134">MyEnum1Ptr</a>
+					<a class="permalink" href="module#MyEnum1Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum1Ptr(v <a href="module#MyEnum1">MyEnum1</a>) *<a href="module#MyEnum1">MyEnum1</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyEnum1.String">func (MyEnum1) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=2683:2715#L120">String</a>
+					<a class="permalink" href="module#MyEnum1.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyEnum1">MyEnum1</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyEnum2">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=3022:3040#L136">MyEnum2</a>
+				<a class="permalink" href="module#MyEnum2">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyEnum2 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyEnum2_ME2_0">MyEnum2_ME2_0</span> <a href="module#MyEnum2">MyEnum2</a> = 0
+    <span id="MyEnum2_ME2_1">MyEnum2_ME2_1</span> <a href="module#MyEnum2">MyEnum2</a> = 1
+    <span id="MyEnum2_ME2_2">MyEnum2_ME2_2</span> <a href="module#MyEnum2">MyEnum2</a> = 2
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyEnum2FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=3644:3693#L174">MyEnum2FromString</a>
+					<a class="permalink" href="module#MyEnum2FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum2FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyEnum2">MyEnum2</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyEnum2Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=3821:3856#L181">MyEnum2Ptr</a>
+					<a class="permalink" href="module#MyEnum2Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum2Ptr(v <a href="module#MyEnum2">MyEnum2</a>) *<a href="module#MyEnum2">MyEnum2</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyEnum2.String">func (MyEnum2) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=3533:3565#L167">String</a>
+					<a class="permalink" href="module#MyEnum2.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyEnum2">MyEnum2</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyEnum3">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=3872:3890#L183">MyEnum3</a>
+				<a class="permalink" href="module#MyEnum3">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyEnum3 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyEnum3_ME3_0">MyEnum3_ME3_0</span>  <a href="module#MyEnum3">MyEnum3</a> = 0
+    <span id="MyEnum3_ME3_1">MyEnum3_ME3_1</span>  <a href="module#MyEnum3">MyEnum3</a> = 1
+    <span id="MyEnum3_ME3_N2">MyEnum3_ME3_N2</span> <a href="module#MyEnum3">MyEnum3</a> = -2
+    <span id="MyEnum3_ME3_N1">MyEnum3_ME3_N1</span> <a href="module#MyEnum3">MyEnum3</a> = -1
+    <span id="MyEnum3_ME3_9">MyEnum3_ME3_9</span>  <a href="module#MyEnum3">MyEnum3</a> = 9
+    <span id="MyEnum3_ME3_10">MyEnum3_ME3_10</span> <a href="module#MyEnum3">MyEnum3</a> = 10
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyEnum3FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=4842:4891#L236">MyEnum3FromString</a>
+					<a class="permalink" href="module#MyEnum3FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum3FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyEnum3">MyEnum3</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyEnum3Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=5019:5054#L243">MyEnum3Ptr</a>
+					<a class="permalink" href="module#MyEnum3Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum3Ptr(v <a href="module#MyEnum3">MyEnum3</a>) *<a href="module#MyEnum3">MyEnum3</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyEnum3.String">func (MyEnum3) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=4731:4763#L229">String</a>
+					<a class="permalink" href="module#MyEnum3.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyEnum3">MyEnum3</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyEnum4">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=5070:5088#L245">MyEnum4</a>
+				<a class="permalink" href="module#MyEnum4">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyEnum4 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="MyEnum4_ME4_A">MyEnum4_ME4_A</span>       <a href="module#MyEnum4">MyEnum4</a> = 2147483645
+    <span id="MyEnum4_ME4_B">MyEnum4_ME4_B</span>       <a href="module#MyEnum4">MyEnum4</a> = 2147483646
+    <span id="MyEnum4_ME4_C">MyEnum4_ME4_C</span>       <a href="module#MyEnum4">MyEnum4</a> = 2147483647
+    <span id="MyEnum4_ME4_D">MyEnum4_ME4_D</span>       <a href="module#MyEnum4">MyEnum4</a> = -2147483648
+    <span id="MyEnum4_Unspecified">MyEnum4_Unspecified</span> <a href="module#MyEnum4">MyEnum4</a> = 0
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MyEnum4FromString">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=5987:6036#L293">MyEnum4FromString</a>
+					<a class="permalink" href="module#MyEnum4FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum4FromString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="module#MyEnum4">MyEnum4</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MyEnum4Ptr">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=6164:6199#L300">MyEnum4Ptr</a>
+					<a class="permalink" href="module#MyEnum4Ptr">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MyEnum4Ptr(v <a href="module#MyEnum4">MyEnum4</a>) *<a href="module#MyEnum4">MyEnum4</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyEnum4.String">func (MyEnum4) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=5876:5908#L286">String</a>
+					<a class="permalink" href="module#MyEnum4.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyEnum4">MyEnum4</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyStruct">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17118:17431#L685">MyStruct</a>
+				<a class="permalink" href="module#MyStruct">&#xb6;</a>
+				
+				
+			</h2>
+			<p>Attributes:
+<ul>
+<li>Me2_3
+<li>Me3N3
+<li>Me1T1
+<li>Me1T2
+</ul>
+
+			<pre>type MyStruct struct {
+<span id="MyStruct.Me2_3"></span>    Me2_3 <a href="module#MyEnum2">MyEnum2</a> `thrift:&#34;me2_3,1&#34; db:&#34;me2_3&#34; json:&#34;me2_3&#34;`
+<span id="MyStruct.Me3N3"></span>    Me3N3 <a href="module#MyEnum3">MyEnum3</a> `thrift:&#34;me3_n3,2&#34; db:&#34;me3_n3&#34; json:&#34;me3_n3&#34;`
+    <span class="comment">// unused field # 3</span>
+<span id="MyStruct.Me1T1"></span>    Me1T1 <a href="module#MyEnum1">MyEnum1</a> `thrift:&#34;me1_t1,4&#34; db:&#34;me1_t1&#34; json:&#34;me1_t1&#34;`
+    <span class="comment">// unused field # 5</span>
+<span id="MyStruct.Me1T2"></span>    Me1T2 <a href="module#MyEnum1">MyEnum1</a> `thrift:&#34;me1_t2,6&#34; db:&#34;me1_t2&#34; json:&#34;me1_t2&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewMyStruct">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17433:17461#L694">NewMyStruct</a>
+					<a class="permalink" href="module#NewMyStruct">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewMyStruct() *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyStruct.GetMe1T1">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17669:17706#L712">GetMe1T1</a>
+					<a class="permalink" href="module#MyStruct.GetMe1T1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) GetMe1T1() <a href="module#MyEnum1">MyEnum1</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.GetMe1T2">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17729:17766#L716">GetMe1T2</a>
+					<a class="permalink" href="module#MyStruct.GetMe1T2">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) GetMe1T2() <a href="module#MyEnum1">MyEnum1</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.GetMe2_3">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17549:17586#L704">GetMe2_3</a>
+					<a class="permalink" href="module#MyStruct.GetMe2_3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) GetMe2_3() <a href="module#MyEnum2">MyEnum2</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.GetMe3N3">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17609:17646#L708">GetMe3N3</a>
+					<a class="permalink" href="module#MyStruct.GetMe3N3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) GetMe3N3() <a href="module#MyEnum3">MyEnum3</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.Read">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18861:18913#L778">Read</a>
+					<a class="permalink" href="module#MyStruct.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) Read(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.ReadField1">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=19978:20037#L822">ReadField1</a>
+					<a class="permalink" href="module#MyStruct.ReadField1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) ReadField1(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.ReadField2">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=20221:20280#L832">ReadField2</a>
+					<a class="permalink" href="module#MyStruct.ReadField2">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) ReadField2(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.ReadField4">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=20464:20523#L842">ReadField4</a>
+					<a class="permalink" href="module#MyStruct.ReadField4">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) ReadField4(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.ReadField6">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=20707:20766#L852">ReadField6</a>
+					<a class="permalink" href="module#MyStruct.ReadField6">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) ReadField6(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.SetMe1T1">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18687:18739#L768">SetMe1T1</a>
+					<a class="permalink" href="module#MyStruct.SetMe1T1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStruct">MyStruct</a>) SetMe1T1(me1T1 <a href="module#MyEnum1">MyEnum1</a>) *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.SetMe1T2">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18774:18826#L773">SetMe1T2</a>
+					<a class="permalink" href="module#MyStruct.SetMe1T2">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStruct">MyStruct</a>) SetMe1T2(me1T2 <a href="module#MyEnum1">MyEnum1</a>) *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.SetMe2_3">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18513:18565#L758">SetMe2_3</a>
+					<a class="permalink" href="module#MyStruct.SetMe2_3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStruct">MyStruct</a>) SetMe2_3(me2_3 <a href="module#MyEnum2">MyEnum2</a>) *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.SetMe3N3">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18600:18652#L763">SetMe3N3</a>
+					<a class="permalink" href="module#MyStruct.SetMe3N3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStruct">MyStruct</a>) SetMe3N3(me3N3 <a href="module#MyEnum3">MyEnum3</a>) *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.String">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=23793:23827#L916">String</a>
+					<a class="permalink" href="module#MyStruct.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStruct.Write">func (*MyStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=20950:21003#L862">Write</a>
+					<a class="permalink" href="module#MyStruct.Write">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#MyStruct">MyStruct</a>) Write(oprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyStructBuilder">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17788:17835#L719">MyStructBuilder</a>
+				<a class="permalink" href="module#MyStructBuilder">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MyStructBuilder struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewMyStructBuilder">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17837:17879#L723">NewMyStructBuilder</a>
+					<a class="permalink" href="module#NewMyStructBuilder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewMyStructBuilder() *<a href="module#MyStructBuilder">MyStructBuilder</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="MyStructBuilder.Emit">func (MyStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=17939:17980#L729">Emit</a>
+					<a class="permalink" href="module#MyStructBuilder.Emit">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#MyStructBuilder">MyStructBuilder</a>) Emit() *<a href="module#MyStruct">MyStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStructBuilder.Me1T1">func (*MyStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18309:18372#L748">Me1T1</a>
+					<a class="permalink" href="module#MyStructBuilder.Me1T1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStructBuilder">MyStructBuilder</a>) Me1T1(me1T1 <a href="module#MyEnum1">MyEnum1</a>) *<a href="module#MyStructBuilder">MyStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStructBuilder.Me1T2">func (*MyStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18411:18474#L753">Me1T2</a>
+					<a class="permalink" href="module#MyStructBuilder.Me1T2">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStructBuilder">MyStructBuilder</a>) Me1T2(me1T2 <a href="module#MyEnum1">MyEnum1</a>) *<a href="module#MyStructBuilder">MyStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStructBuilder.Me2_3">func (*MyStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18105:18168#L738">Me2_3</a>
+					<a class="permalink" href="module#MyStructBuilder.Me2_3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStructBuilder">MyStructBuilder</a>) Me2_3(me2_3 <a href="module#MyEnum2">MyEnum2</a>) *<a href="module#MyStructBuilder">MyStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyStructBuilder.Me3N3">func (*MyStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=18207:18270#L743">Me3N3</a>
+					<a class="permalink" href="module#MyStructBuilder.Me3N3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="module#MyStructBuilder">MyStructBuilder</a>) Me3N3(me3N3 <a href="module#MyEnum3">MyEnum3</a>) *<a href="module#MyStructBuilder">MyStructBuilder</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SomeStruct">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=8750:9070#L411">SomeStruct</a>
+				<a class="permalink" href="module#SomeStruct">&#xb6;</a>
+				
+				
+			</h2>
+			<p>Attributes:
+<ul>
+<li>Reasonable
+<li>Fine
+<li>Questionable
+<li>Tags
+</ul>
+
+			<pre>type SomeStruct struct {
+<span id="SomeStruct.Reasonable"></span>    Reasonable   <a href="module#Metasyntactic">Metasyntactic</a> `thrift:&#34;reasonable,1&#34; db:&#34;reasonable&#34; json:&#34;reasonable&#34;`
+<span id="SomeStruct.Fine"></span>    Fine         <a href="module#Metasyntactic">Metasyntactic</a> `thrift:&#34;fine,2&#34; db:&#34;fine&#34; json:&#34;fine&#34;`
+<span id="SomeStruct.Questionable"></span>    Questionable <a href="module#Metasyntactic">Metasyntactic</a> `thrift:&#34;questionable,3&#34; db:&#34;questionable&#34; json:&#34;questionable&#34;`
+<span id="SomeStruct.Tags"></span>    Tags         []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>       `thrift:&#34;tags,4&#34; db:&#34;tags&#34; json:&#34;tags&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewSomeStruct">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9072:9104#L418">NewSomeStruct</a>
+					<a class="permalink" href="module#NewSomeStruct">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewSomeStruct() *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="SomeStruct.GetFine">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9295:9339#L433">GetFine</a>
+					<a class="permalink" href="module#SomeStruct.GetFine">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) GetFine() <a href="module#Metasyntactic">Metasyntactic</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.GetQuestionable">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9361:9413#L437">GetQuestionable</a>
+					<a class="permalink" href="module#SomeStruct.GetQuestionable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) GetQuestionable() <a href="module#Metasyntactic">Metasyntactic</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.GetReasonable">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9217:9267#L429">GetReasonable</a>
+					<a class="permalink" href="module#SomeStruct.GetReasonable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) GetReasonable() <a href="module#Metasyntactic">Metasyntactic</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.GetTags">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9443:9481#L441">GetTags</a>
+					<a class="permalink" href="module#SomeStruct.GetTags">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) GetTags() []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.Read">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10761:10815#L503">Read</a>
+					<a class="permalink" href="module#SomeStruct.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) Read(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.ReadField1">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=11880:11941#L547">ReadField1</a>
+					<a class="permalink" href="module#SomeStruct.ReadField1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) ReadField1(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.ReadField2">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=12136:12197#L557">ReadField2</a>
+					<a class="permalink" href="module#SomeStruct.ReadField2">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) ReadField2(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.ReadField3">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=12386:12447#L567">ReadField3</a>
+					<a class="permalink" href="module#SomeStruct.ReadField3">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) ReadField3(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.ReadField4">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=12644:12705#L577">ReadField4</a>
+					<a class="permalink" href="module#SomeStruct.ReadField4">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) ReadField4(iprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.SetFine">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10456:10516#L488">SetFine</a>
+					<a class="permalink" href="module#SomeStruct.SetFine">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStruct">SomeStruct</a>) SetFine(fine <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.SetQuestionable">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10549:10625#L493">SetQuestionable</a>
+					<a class="permalink" href="module#SomeStruct.SetQuestionable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStruct">SomeStruct</a>) SetQuestionable(questionable <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.SetReasonable">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10339:10411#L483">SetReasonable</a>
+					<a class="permalink" href="module#SomeStruct.SetReasonable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStruct">SomeStruct</a>) SetReasonable(reasonable <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.SetTags">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10674:10728#L498">SetTags</a>
+					<a class="permalink" href="module#SomeStruct.SetTags">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStruct">SomeStruct</a>) SetTags(tags []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.String">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=16655:16691#L668">String</a>
+					<a class="permalink" href="module#SomeStruct.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStruct.Write">func (*SomeStruct) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=13252:13307#L599">Write</a>
+					<a class="permalink" href="module#SomeStruct.Write">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="module#SomeStruct">SomeStruct</a>) Write(oprot <a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/">thrift</a>.<a href="http://localhost:6060/pkg/github.com/facebook/fbthrift/thrift/lib/go/thrift/#Protocol">Protocol</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SomeStructBuilder">type <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9502:9553#L444">SomeStructBuilder</a>
+				<a class="permalink" href="module#SomeStructBuilder">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type SomeStructBuilder struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewSomeStructBuilder">func <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9555:9601#L448">NewSomeStructBuilder</a>
+					<a class="permalink" href="module#NewSomeStructBuilder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewSomeStructBuilder() *<a href="module#SomeStructBuilder">SomeStructBuilder</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="SomeStructBuilder.Emit">func (SomeStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9665:9710#L454">Emit</a>
+					<a class="permalink" href="module#SomeStructBuilder.Emit">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p <a href="module#SomeStructBuilder">SomeStructBuilder</a>) Emit() *<a href="module#SomeStruct">SomeStruct</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStructBuilder.Fine">func (*SomeStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9989:10060#L468">Fine</a>
+					<a class="permalink" href="module#SomeStructBuilder.Fine">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStructBuilder">SomeStructBuilder</a>) Fine(fine <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStructBuilder">SomeStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStructBuilder.Questionable">func (*SomeStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10097:10184#L473">Questionable</a>
+					<a class="permalink" href="module#SomeStructBuilder.Questionable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStructBuilder">SomeStructBuilder</a>) Questionable(questionable <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStructBuilder">SomeStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStructBuilder.Reasonable">func (*SomeStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=9857:9940#L463">Reasonable</a>
+					<a class="permalink" href="module#SomeStructBuilder.Reasonable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStructBuilder">SomeStructBuilder</a>) Reasonable(reasonable <a href="module#Metasyntactic">Metasyntactic</a>) *<a href="module#SomeStructBuilder">SomeStructBuilder</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SomeStructBuilder.Tags">func (*SomeStructBuilder) <a href="http://localhost:6060/src/github.com/vesoft-inc/fbthrift/thrift/compiler/test/fixtures/enums/gen-go/module/ttypes.go?s=10237:10302#L478">Tags</a>
+					<a class="permalink" href="module#SomeStructBuilder.Tags">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="module#SomeStructBuilder">SomeStructBuilder</a>) Tags(tags []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) *<a href="module#SomeStructBuilder">SomeStructBuilder</a></pre>
+				
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.20.12.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
